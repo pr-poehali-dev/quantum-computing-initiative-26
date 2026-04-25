@@ -6,21 +6,21 @@ const translations = {
   en: {
     copyright: "All rights reserved.",
     followMe: "Follow",
-    subtitle: "Classical Pianist",
+    subtitle: "Russian Rap Artist",
     quickLinks: "Quick Links",
     biography: "Biography",
-    concerts: "Concerts",
+    concerts: "Releases",
     gallery: "Gallery",
     privacyPolicy: "Privacy Policy",
     terms: "Terms",
   },
   de: {
     copyright: "Alle Rechte vorbehalten.",
-    followMe: "Folgen Sie mir",
-    subtitle: "Klassischer Pianist",
-    quickLinks: "Schnelllinks",
-    biography: "Biographie",
-    concerts: "Konzerte",
+    followMe: "Folgen",
+    subtitle: "Russischer Rap-Künstler",
+    quickLinks: "Links",
+    biography: "Biografie",
+    concerts: "Releases",
     gallery: "Galerie",
     privacyPolicy: "Datenschutz",
     terms: "AGB",
@@ -28,10 +28,10 @@ const translations = {
   ru: {
     copyright: "Все права защищены.",
     followMe: "Соцсети",
-    subtitle: "Классический пианист",
+    subtitle: "Русский рэп исполнитель",
     quickLinks: "Навигация",
     biography: "Биография",
-    concerts: "Концерты",
+    concerts: "Релизы",
     gallery: "Галерея",
     privacyPolicy: "Политика конфиденциальности",
     terms: "Условия",
@@ -46,7 +46,7 @@ export default function Footer({ language }: FooterProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-warm-white mb-4">А. Фосс</h3>
+            <h3 className="text-warm-white mb-4 tracking-widest font-bold">MAYOT</h3>
             <small className="text-warm-white/70">{t.subtitle}</small>
           </div>
 
@@ -74,18 +74,21 @@ export default function Footer({ language }: FooterProps) {
           <div>
             <h3 className="text-warm-white mb-4">{t.followMe}</h3>
             <div className="flex gap-4">
-              <a href="https://instagram.com" className="text-warm-white/70 hover:text-gold transition-colors">
+              <a href="https://instagram.com/mayot" target="_blank" rel="noopener noreferrer" className="text-warm-white/70 hover:text-gold transition-colors">
                 Instagram
               </a>
-              <a href="https://facebook.com" className="text-warm-white/70 hover:text-gold transition-colors">
-                Facebook
+              <a href="https://vk.com/mayot" target="_blank" rel="noopener noreferrer" className="text-warm-white/70 hover:text-gold transition-colors">
+                VK
+              </a>
+              <a href="https://t.me/mayot" target="_blank" rel="noopener noreferrer" className="text-warm-white/70 hover:text-gold transition-colors">
+                Telegram
               </a>
             </div>
           </div>
         </div>
 
         <div className="border-t border-warm-white/20 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-warm-white/70">
-          <small>&copy; 2025 Александр Фосс. {t.copyright}</small>
+          <small>&copy; 2025 MAYOT. {t.copyright}</small>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-warm-white transition-colors">
               {t.privacyPolicy}
