@@ -2,45 +2,45 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Space+Grotesk:wght@400;600;700;800&display=swap");
+
 @layer base {
   :root {
-    /* Getto Garden Color Palette */
-    --cream: #0d1a0f;
-    --charcoal: #e8e4df;
-    --taupe: #7a9c7e;
-    --gold: #4caf6b;
-    --warm-white: #111d13;
+    --gg-bg: #0a0c0a;
+    --gg-surface: rgba(18, 24, 18, 0.75);
+    --gg-border: #3c5a3c;
+    --gg-border-soft: #2d432d;
+    --gg-green-bright: #a8d8a0;
+    --gg-green-mid: #7fa07f;
+    --gg-green-dim: #5c8550;
+    --gg-green-dark: #33502c;
+    --gg-text: #d4e6d4;
+    --gg-text-soft: #b0c7a8;
+    --gg-text-dim: #7b9360;
+    --gg-card-bg: #102010;
+    --gg-card-hover: #1a2f18;
+    --gg-track-bg: #122012;
 
-    /* Design Tokens */
-    --background: 120 20% 7%;
-    --foreground: 40 15% 90%;
-
-    --card: 120 18% 9%;
-    --card-foreground: 40 15% 90%;
-
-    --popover: 120 18% 9%;
-    --popover-foreground: 40 15% 90%;
-
-    --primary: 40 15% 90%;
-    --primary-foreground: 120 20% 7%;
-
-    --secondary: 120 15% 25%;
-    --secondary-foreground: 40 15% 90%;
-
-    --muted: 120 10% 20%;
-    --muted-foreground: 120 10% 60%;
-
-    --accent: 135 45% 48%;
-    --accent-foreground: 120 20% 7%;
-
+    --background: 120 15% 5%;
+    --foreground: 120 20% 85%;
+    --card: 120 18% 8%;
+    --card-foreground: 120 20% 85%;
+    --popover: 120 18% 8%;
+    --popover-foreground: 120 20% 85%;
+    --primary: 120 20% 85%;
+    --primary-foreground: 120 15% 5%;
+    --secondary: 120 15% 20%;
+    --secondary-foreground: 120 20% 85%;
+    --muted: 120 10% 18%;
+    --muted-foreground: 120 10% 55%;
+    --accent: 125 40% 45%;
+    --accent-foreground: 120 15% 5%;
     --destructive: 0 62.8% 40%;
-    --destructive-foreground: 40 15% 90%;
-
-    --border: 120 12% 20%;
-    --input: 120 18% 9%;
-    --ring: 135 45% 48%;
-
-    --radius: 0;
+    --destructive-foreground: 120 20% 85%;
+    --border: 120 15% 18%;
+    --input: 120 18% 8%;
+    --ring: 125 40% 45%;
+    --radius: 0px;
   }
 }
 
@@ -48,41 +48,292 @@
   * {
     @apply border-border;
   }
+  html {
+    scroll-behavior: smooth;
+  }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
-    background-color: var(--cream);
-    color: var(--charcoal);
+    background: var(--gg-bg);
+    background-image:
+      radial-gradient(
+        circle at 30% 40%,
+        rgba(30, 59, 30, 0.12) 0%,
+        transparent 70%
+      ),
+      linear-gradient(45deg, #0f130f 0%, #0a0c0a 100%);
+    color: var(--gg-text);
+    font-family: "Courier Prime", "Courier New", monospace;
+    min-height: 100vh;
   }
 
-  h1 {
-    @apply text-5xl md:text-7xl font-serif font-normal leading-tight;
-  }
-
-  h2 {
-    @apply text-4xl md:text-5xl font-serif font-normal leading-tight;
-  }
-
-  h3 {
-    @apply text-xl font-serif font-normal;
-  }
-
-  p {
-    @apply text-base leading-relaxed;
-  }
-
-  small {
-    @apply text-sm;
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Space Grotesk", "Helvetica Neue", "Arial Black", sans-serif;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 }
 
-/* Custom utility classes */
-.line-accent {
-  @apply h-0.5 w-12;
-  background-color: var(--gold);
+/* ---- Ghetto Garden Components ---- */
+
+.gg-container {
+  max-width: 820px;
+  width: 100%;
+  margin: 0 auto;
+  background: var(--gg-surface);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid var(--gg-border);
+  border-radius: 2.5rem;
+  padding: 2.8rem 2.2rem;
+  box-shadow:
+    0 25px 50px -8px rgba(0, 0, 0, 0.8),
+    0 0 0 1px rgba(100, 160, 100, 0.15),
+    0 0 30px rgba(60, 90, 60, 0.4);
 }
 
-/* Animation keyframes */
+.gg-section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin: 2.5rem 0 1.2rem 0;
+  color: #c2e0b0;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 6px solid var(--gg-green-dim);
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.gg-bio-text {
+  color: var(--gg-text-soft);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  background: rgba(15, 23, 15, 0.5);
+  padding: 1.4rem 1.8rem;
+  border-radius: 24px;
+  border: 1px solid var(--gg-border-soft);
+  backdrop-filter: blur(8px);
+}
+
+.gg-bio-text p + p {
+  margin-top: 0.9rem;
+}
+
+.gg-bio-text strong {
+  color: #cbe6b0;
+  font-weight: 700;
+}
+
+.gg-album-desc {
+  background: rgba(11, 19, 11, 0.8);
+  border: 1px solid var(--gg-border-soft);
+  border-radius: 28px;
+  padding: 1.8rem;
+  margin: 1.5rem 0;
+  backdrop-filter: blur(20px);
+  color: #c2d6b2;
+}
+
+.gg-tracklist {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-top: 1.2rem;
+}
+
+.gg-tracklist li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.65rem 1.2rem;
+  background: var(--gg-track-bg);
+  border-radius: 18px;
+  border: 1px solid var(--gg-green-dark);
+  transition: 0.2s;
+  color: #bbd5a0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.gg-tracklist li:hover {
+  background: #1f331f;
+  border-color: #6b9a4e;
+}
+
+.gg-track-num {
+  font-size: 0.85rem;
+  color: #6e8e5a;
+  font-weight: bold;
+  width: 26px;
+  flex-shrink: 0;
+}
+
+.gg-release-card {
+  background: var(--gg-card-bg);
+  border: 1px solid var(--gg-green-dark);
+  border-radius: 20px;
+  padding: 1.2rem;
+  transition: 0.25s;
+  color: #b0ca98;
+}
+
+.gg-release-card:hover {
+  border-color: #80a060;
+  background: var(--gg-card-hover);
+  transform: translateY(-4px);
+  box-shadow: 0 15px 25px -8px #0a110a;
+}
+
+.gg-tag {
+  background: #1e2e1e;
+  padding: 0.35rem 1rem;
+  border-radius: 30px;
+  font-size: 0.72rem;
+  font-weight: bold;
+  color: #b8d8b0;
+  border: 1px solid #3e5e3e;
+  letter-spacing: 1px;
+  font-family: "Courier Prime", monospace;
+  white-space: nowrap;
+}
+
+/* Cover art */
+.gg-cover-art {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1/1;
+  background: #132013;
+  border: 3px solid #4c6b4c;
+  border-radius: 32px;
+  box-shadow:
+    0 30px 40px -15px #000000dd,
+    0 0 50px #2a4a2a88;
+  position: relative;
+  overflow: hidden;
+}
+
+.gg-garden-bg {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 20% 70%, #385a28 5%, #0e1b0e 70%);
+}
+
+.gg-cover-title {
+  position: absolute;
+  top: 25px;
+  left: 28px;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #e0f0c0;
+  text-shadow:
+    4px 4px 0 #1a2a0a,
+    0 0 35px #406030;
+  letter-spacing: 4px;
+  font-family: "Space Grotesk", "Arial Black", sans-serif;
+  line-height: 0.95;
+  opacity: 0.95;
+  white-space: pre-line;
+}
+
+.gg-vinyl-label {
+  position: absolute;
+  bottom: 15px;
+  right: 18px;
+  font-size: 0.85rem;
+  background: #0d140d;
+  padding: 0.28rem 0.9rem;
+  border-radius: 20px;
+  color: #88aa70;
+  font-weight: bold;
+  border: 1px solid #3e5e3e;
+  letter-spacing: 1px;
+  font-family: "Courier Prime", monospace;
+}
+
+.gg-plants {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 0 1.2rem;
+}
+
+.gg-stem {
+  width: 7px;
+  background: linear-gradient(to top, #1a2e1a, #4a6e3a);
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 0 0 14px #2c4a1e;
+}
+
+.gg-stem::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -6px;
+  width: 20px;
+  height: 24px;
+  background: #6f8f4f;
+  border-radius: 50% 50% 30% 30%;
+  box-shadow:
+    0 0 18px #5b7a3a,
+    inset 0 -6px 8px #2c3a1c;
+}
+
+.gg-stem:nth-child(2)::after {
+  background: #4e6e38;
+  width: 28px;
+  left: -10px;
+}
+.gg-stem:nth-child(3)::after {
+  background: #809f5a;
+  width: 26px;
+  left: -9px;
+  box-shadow: 0 0 22px #5a803a;
+}
+.gg-stem:nth-child(4)::after {
+  background: #5d7e42;
+  width: 22px;
+  left: -7px;
+}
+.gg-stem:nth-child(5)::after {
+  background: #92b068;
+  width: 30px;
+  left: -11px;
+  box-shadow: 0 0 25px #6a9040;
+}
+.gg-stem:nth-child(6)::after {
+  background: #638e4a;
+  width: 20px;
+  left: -6px;
+}
+
+/* Nav */
+.gg-nav {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(10, 12, 10, 0.9);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--gg-border);
+  padding: 0.9rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -98,29 +349,15 @@
   animation: fadeInUp 0.6s ease-out forwards;
   opacity: 0;
 }
-
 .animation-delay-100 {
   animation-delay: 100ms;
 }
-
 .animation-delay-200 {
   animation-delay: 200ms;
 }
-
 .animation-delay-300 {
   animation-delay: 300ms;
 }
-
 .animation-delay-400 {
   animation-delay: 400ms;
-}
-
-/* Getto Garden texture */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.015'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 0;
 }
