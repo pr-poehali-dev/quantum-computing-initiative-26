@@ -1,3 +1,7 @@
-# quantum-computing-initiative-26
+# Лендинг Музыканта
 
-Initial repository setup for pr-poehali-dev/quantum-computing-initiative-26
+![Preview](preview.png)
+
+Элегантный лендинг для классического музыканта или исполнителя. Включает секции: hero с фоновым изображением, биография, расписание концертов, галерея, контактная форма. Мультиязычная поддержка (RU/EN/DE). Минималистичный дизайн с золотыми акцентами.
+
+`"tags": ["landing", "dark", "portfolio", "creative", "animations", "glass"]`
