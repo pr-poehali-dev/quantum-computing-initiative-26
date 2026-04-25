@@ -6,28 +6,28 @@ const translations = {
   en: {
     heading: "Biography",
     paragraphs: [
-      "Mayot (Marat Khairullin) is a Russian rapper and singer from Kazan, born on May 3, 2000. His artistic pseudonym derives from a childhood nickname. He began his music career in his early teens, inspired by the atmosphere of his hometown streets.",
-      "His debut tracks gained attention in the underground scene, and after releasing his first full-length projects, he quickly became one of the most talked-about figures in the new wave of Russian rap. His style is a blend of melodic flows, street lyricism, and emotional vulnerability.",
-      "Mayot collaborated with major Russian artists including Скриптонит, Boulevard Depo, and Flesh, cementing his place in the contemporary rap landscape. His music is distinguished by heartfelt, personal lyrics and a unique sound that mixes elements of trap, melodic rap, and post-Soviet street poetry.",
-      "Among his landmark releases are the albums «Getto Garden» and «Эдем», which received widespread acclaim and millions of streams across all major platforms.",
+      "Artyom Gennadyevich Nikitin, known as MAYOT, was born on May 3, 2000, in Kazan, Russia. His artist name comes from a childhood nickname — a shortened version of his surname. Growing up in the working-class neighborhoods of Kazan, he absorbed the sounds of the streets that would later define his music.",
+      "He started making music at the age of 14, recording his first tracks in home studios. In 2018–2019, his tracks began spreading across VKontakte and SoundCloud, quickly building a loyal following in the Russian underground rap scene.",
+      "A breakthrough came with his collaboration with Скриптонит on «Медленно», which brought him to a wide national audience. MAYOT became known for raw emotional delivery, melodic hooks, and deeply personal storytelling — a voice speaking directly from the ghettos of Kazan.",
+      "His discography grew rapidly with key features alongside Boulevard Depo, Flesh, Yanix, and other pillars of the Russian rap scene. His signature blends introspective lyrics, trap production, and a unique Tatar street poetry sensibility.",
     ],
   },
   de: {
     heading: "Biografie",
     paragraphs: [
-      "Mayot (Marat Khairullin) ist ein russischer Rapper und Sänger aus Kasan, geboren am 3. Mai 2000. Sein Künstlername stammt von einem Kindheitsspitznamen. Er begann seine Musikkarriere in seiner frühen Jugend, inspiriert von der Atmosphäre der Straßen seiner Heimatstadt.",
-      "Seine Debüttracks erregten Aufmerksamkeit in der Underground-Szene, und nach der Veröffentlichung seiner ersten Vollprojekte wurde er schnell zu einer der meistdiskutierten Figuren in der neuen Welle des russischen Raps.",
-      "Mayot arbeitete mit großen russischen Künstlern zusammen, darunter Скриптонит, Boulevard Depo und Flesh. Seine Musik zeichnet sich durch aufrichtige, persönliche Texte und einen einzigartigen Sound aus, der Elemente von Trap, melodischem Rap und postsowjetischer Straßenpoesie verbindet.",
-      "Zu seinen wichtigsten Veröffentlichungen gehören die Alben «Getto Garden» und «Эдем», die breite Anerkennung und Millionen von Streams auf allen großen Plattformen erhielten.",
+      "Artjom Gennadjewitsch Nikitin, bekannt als MAYOT, wurde am 3. Mai 2000 in Kasan geboren. Sein Künstlername stammt von einem Kindheitsspitznamen — einer Kurzform seines Nachnamens. Er wuchs in den Arbeitervierteln Kasans auf.",
+      "Er begann im Alter von 14 Jahren Musik zu machen. In den Jahren 2018–2019 begannen seine Tracks sich über VKontakte und SoundCloud zu verbreiten und brachten ihm schnell eine treue Fangemeinde in der russischen Underground-Rap-Szene.",
+      "Ein Durchbruch gelang mit der Zusammenarbeit mit Скриптонит auf «Медленно». MAYOT wurde für seine rohe emotionale Darbietung und zutiefst persönliche Geschichtenerzählung bekannt — eine Stimme direkt aus den Kasaner Ghettos.",
+      "Seine Diskografie wuchs rasch durch Kollaborationen mit Boulevard Depo, Flesh, Yanix und anderen Schlüsselfiguren der russischen Rap-Szene. Sein Stil verbindet introspektive Texte, Trap-Beats und tatarische Straßenpoesie.",
     ],
   },
   ru: {
     heading: "Биография",
     paragraphs: [
-      "Майот (Марат Хайруллин) — российский рэпер и певец из Казани, родился 3 мая 2000 года. Свой творческий псевдоним он получил от детского прозвища. Музыкальную карьеру начал в раннем подростковом возрасте, вдохновлённый атмосферой улиц родного города.",
-      "Его дебютные треки привлекли внимание в андеграунд-сцене, а после выхода первых полноформатных проектов он быстро стал одним из самых обсуждаемых исполнителей новой волны российского рэпа. Его стиль — сплав мелодичных флоу, уличной лирики и эмоциональной открытости.",
-      "Майот сотрудничал с крупнейшими российскими артистами — Скриптонитом, Boulevard Depo, Flesh и другими, — закрепив своё место на современной рэп-сцене. Его музыка отличается личными текстами от сердца и уникальным звучанием, объединяющим элементы трэпа, мелодичного рэпа и постсоветской уличной поэзии.",
-      "Среди ключевых релизов — альбомы «Getto Garden» и «Эдем», получившие широкое признание и десятки миллионов прослушиваний на всех крупных платформах.",
+      "Артём Геннадьевич Никитин, известный как MAYOT, родился 3 мая 2000 года в Казани. Псевдоним возник из детского прозвища — сокращения от фамилии. Вырастая в рабочих кварталах Казани, он впитывал звуки улиц, которые впоследствии стали основой его музыки.",
+      "Начал заниматься музыкой в 14 лет, записывая первые треки дома. В 2018–2019 годах его треки начали распространяться во ВКонтакте и SoundCloud, быстро собрав преданную аудиторию в российском андеграунде.",
+      "Переломным стало сотрудничество со Скриптонитом на треке «Медленно», который вывел его на широкую аудиторию. MAYOT стал известен сырой эмоциональной подачей и откровенными личными текстами — голосом, говорящим прямо с казанских улиц.",
+      "Дискография быстро расширялась: совместные проекты с Boulevard Depo, Flesh, Yanix и другими ключевыми фигурами сцены. Фирменный стиль MAYOT — интроспективные тексты, трэп-биты и самобытная татарская уличная поэтика.",
     ],
   },
 }

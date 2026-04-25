@@ -28,11 +28,12 @@ export default function Hero({ language }: HeroProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://cdn.poehali.dev/projects/e9707ece-5d5f-4949-ad48-f33630ca0c36/files/1d971e40-9208-4adb-9d38-692b43b1f06b.jpg"
-          alt="Mayot performing"
+          src="https://cdn.poehali.dev/projects/e9707ece-5d5f-4949-ad48-f33630ca0c36/files/b816178e-db06-488d-aa7c-a654deb2eb97.jpg"
+          alt="Mayot - Getto Garden"
           className="w-full h-full object-cover"
+          style={{ filter: "brightness(0.6) saturate(1.3)" }}
         />
-        <div className="absolute inset-0 bg-charcoal/55"></div>
+        <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(10,21,9,0.7) 0%, rgba(5,30,10,0.5) 100%)" }}></div>
       </div>
 
       {/* Content */}
